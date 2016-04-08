@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+
+  get 'me/pictures'
+
+  get 'me/contact'
+
+  root 'me#bio'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
