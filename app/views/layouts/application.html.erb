@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>Admissions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container_one">
+    <ul class="nav nav-tabs">
+      <li><%= link_to "Bio", root_path, style: "color:white" %></li>
+      <li><%= link_to "Pictures", me_pictures_path, style: "color:white" %></li>
+      <li><%= link_to "Contact Info", me_contact_path, style: "color:white" %></li>
+    </ul>
+  </div>
 
-<%= yield %>
+  <div class="below_navbar">
+    <%= yield %>
+  </div>
+
 
 </body>
 </html>

@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require_tree .
+$(document).on({
+    mouseenter: function () {
+        alert("Be Careful, this information may be disturbing. *You are seeing this message because I used the 'mouseenter jQuery' function to call an alert when the mouse enters the button's field");
+    },
+    mouseleave: function () {
+        alert("Now that the mouse is outside the buttons field, you are seeing a different Message. Pretty annoying, huh? You should probably click the button to prevent the page from creating additional dialogs")
+    }
+}, "#below_box > #link");

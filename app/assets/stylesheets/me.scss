@@ -1,3 +1,40 @@
 // Place all the styles related to the me controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+.below_navbar {
+  margin: 20px 100px 20px 100px;
+}
+
+.first_box {
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  background-color: khaki;
+}
+
+.bio > h1 {
+  color: red;
+  color: cornflowerblue;
+}
+
+.bio_1 {
+  color: navy;
+
+}
+
+#below_box, #below_box_2, {
+  padding: 30px 20px 30px 20px;
+}
+
+#below_box > link, #below_box_2 > a {
+  float: left;
+}
+
+#below_box_2 > a:hover{
+  background-color: transparent;
+  color:purple;
+}
