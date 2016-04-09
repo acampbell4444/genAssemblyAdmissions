@@ -102,7 +102,28 @@
 }
 
 #app_heading {
-  padding-top: 60px;
+  color: chartreuse;
+  font-size: 40px;
   text-align:center;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#app_text{
   color: tomato;
+}
+#app_text > a{
+  color: purple;
+  font-size: 16px;
+  font-weight:bold;
+}
+#app_text > a:hover{
+  color: green;
+  background-color: yellow;
+  font-weight:bold;
+}
+#app_box{
+  padding: 30px 20px 30px 20px;
 }
