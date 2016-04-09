@@ -1,2 +1,28 @@
-<h1>Me#pictures</h1>
-<p>Find me in app/views/me/pictures.html.erb</p>
+<div class="jumbotron">
+  <p id="h_two">3 Random Pics of me I found on Google</p>
+  <div id="slideshow">
+     <div>
+       <img src="http://s3-media4.fl.yelpcdn.com/bphoto/NJlEzCQz57JC6qRmk5rerg/o.jpg" height="300" width="242">
+     </div>
+     <div>
+    <img src="http://s3-media4.fl.yelpcdn.com/bphoto/lVShGpvyyihJXeuU68IbxA/o.jpg" height="300" width="242">
+     </div>
+     <div>
+         <img src="https://avatars3.githubusercontent.com/u/16197719?v=3&s=460" height="280" width="242">
+     </div>
+  </div>
+</div>
+
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#slideshow');
+},  4000);
+
+</script>

@@ -7,4 +7,7 @@ class MeController < ApplicationController
 
   def contact
   end
+
+  def early
+  end
 end

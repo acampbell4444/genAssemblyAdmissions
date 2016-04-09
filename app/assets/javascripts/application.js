@@ -21,5 +21,5 @@ $(document).on({
     },
     mouseleave: function () {
         alert("Now that the mouse is outside the buttons field, you are seeing a different Message. Pretty annoying, huh? You should probably click the button to prevent the page from creating additional dialogs")
-    }
+    },
 }, "#below_box > #link");

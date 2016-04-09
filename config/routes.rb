@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get 'me/contact'
 
+  get 'me/early'
+
   root 'me#bio'
 
   # The priority is based upon order of creation: first created -> highest priority.

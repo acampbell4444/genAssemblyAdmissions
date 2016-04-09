@@ -6,24 +6,45 @@
   <div class="row">
     <div class="col-md-4">
       <div id="below_box">
-        <link_to "#" class="btn btn-info btn-lg" id= "link">
-        <span class="glyphicon glyphicon-baby-formula"></span> Learn about my Early Years
-        </a>
+        <%= link_to me_early_path, class:"btn btn-info btn-lg", id: "link" do %>
+          <span class="glyphicon glyphicon-baby-formula"></span> Learn about my Early Years
+        <% end %>
       </div>
     </div>
     <div class="col-md-4">
       <div id="below_box_2">
-        <a href="#" class="btn btn-info btn-lg">
+        <a href="#" class="btn btn-info btn-lg" id="experiences">
         <span class="glyphicon glyphicon-sunglasses"></span> Learn about my Experiences
         </a>
       </div>
+      <div class ="experience_list">
+      </div>
     </div>
     <div class="col-md-4">
-      <div id="below_box">
-        <a href="#" class="btn btn-info btn-lg">
+      <div id="below_boxx">
+        <a href="#" class="btn btn-info btn-lg" id="goals">
         <span class="glyphicon glyphicon-education"></span> Learn about my Goals
         </a>
+      </div>
+      <div class ="goals_list">
       </div>
     </div>
   </div>
 </div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+  </div>
+</div>
+  <small>FYI: The above progress bar is completely pointless</small>
+
+<script>
+  $('#below_box_2').one("click", function() {
+  $  (".experience_list").append("<ol><li class='list-group-item list-group-item-success'>Hiked the Grand Canyon</li><li class= 'list-group-item list-group-item-warning'>Lived in the US Virgin Islands</li><li class= 'list-group-item list-group-item-info'>Became 100 ton USCG License Captain</li><li class= 'list-group-item list-group-item-danger'>Became a Father</li><li class= 'list-group-item list-group-item-active'>Graduated College</li><li <li class= 'list-group-item list-group-item-success'>Discovered Coding</li><li class= 'list-group-item list-group-item-warning'>Applied to General Assembly</li></ol>");
+  });
+  $('#below_boxx').one("click", function() {
+  $  (".goals_list").append("<ol><li class='list-group-item list-group-item-success'>Be Healthy</li><li class= 'list-group-item list-group-item-warning'>Be Happy</li><li class= 'list-group-item list-group-item-info'>Be Holy</li><li class= 'list-group-item list-group-item-danger'>Be Thankful</li><li class= 'list-group-item list-group-item-active'>Be Wise</li><li <li class= 'list-group-item list-group-item-success'>Expand my Brain</li><li class= 'list-group-item list-group-item-warning'>Get a Job as a Junior to Mid-level Developer</li></ol>");
+  });
+
+
+</script>
